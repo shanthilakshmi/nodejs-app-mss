@@ -8,16 +8,16 @@ node
 
 //Build
 stage('Build'){
-nodejs(nodeJSInstallationName: 'NodeJS 19.1.0'){
+nodejs(nodeJSInstallationName: 'nodejs18.6.0'){
 sh "npm install"
 }
 }
 
 //Execute SOnarQUbe Report
 stage('ExecuteSonarQubeReport'){
-  nodejs(nodeJSInstallationName: 'NodeJS 19.1.0'){
- sh "npm run sonar"
- }
+nodejs(nodeJSInstallationName: 'nodejs18.6.0'){
+sh "npm run sonar"
+}
 }
 
 stage('UploadArtifcatsintoNexus')

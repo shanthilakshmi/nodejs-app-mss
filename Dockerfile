@@ -1,6 +1,9 @@
-FROM node
+FROM node:alpine
+
+EXPOSE 3000
+
 WORKDIR /app
-COPY . . 
-RUN npm install
-EXPOSE 9981
-CMD ["node","app.js"]
+
+COPY . /app
+
+CMD ["node", "app.js"]

@@ -15,7 +15,7 @@ sh "npm install"
 
 //Execute SOnarQUbe Report
 stage('ExecuteSonarQubeReport'){
-  nodejs(nodeJSInstallationName: 'NodeJS-16.18.1){
+  nodejs(nodeJSInstallationName: 'NodeJS-16.18.1'){
  sh "npm run sonar"
  }
 }

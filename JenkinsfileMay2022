@@ -3,10 +3,9 @@ node
 agent any
 tools {nodejs 'NodeJS-16.18.1'}
 //Checkout Code stage
-//stage('CheckoutCode'){
-//git credentialsId: '4368c281-f352-4495-89c1-730c9742fca9', url: 'https://github.com/MithunTechnologiesDevOps/nodejs-app-mss.git'
-//}
-
+stage('CheckoutCode'){
+sh 'git clone https://github.com/shanthilakshmi/nodejs-app-mss.git'
+}
 //Build
 stage('Build'){
 nodejs(nodeJSInstallationName: 'NodeJS-16.18.1'){

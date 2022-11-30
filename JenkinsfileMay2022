@@ -1,14 +1,14 @@
 node
 {
 agent any
-tools {nodejs 'NodeJS-16.18.1'}
+//tools {nodejs 'NodeJS-16.18.1'}
 //Checkout Code stage
 stage('CheckoutCode'){
 sh 'git clone https://github.com/shanthilakshmi/nodejs-app-mss.git'
 }
 //Build
 stage('Build'){
-nodejs(nodeJSInstallationName: 'NodeJS-16.18.1'){
+//nodejs(nodeJSInstallationName: 'NodeJS-16.18.1'){
 sh "npm install"
 }
 }

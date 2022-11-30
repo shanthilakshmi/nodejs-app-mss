@@ -9,8 +9,8 @@ sh 'git clone https://github.com/shanthilakshmi/nodejs-app-mss.git'
 //Build
 stage('Build'){
 //nodejs(nodeJSInstallationName: 'NodeJS-16.18.1'){
+//}
 sh "npm install"
-}
 }
 
 //Execute SOnarQUbe Report

@@ -3,6 +3,7 @@ node
  
   stage("CheckOutCodeGit")
   {
+     sh' rm -rf nodejs-app-mss'
      sh'git clone https://github.com/shanthilakshmi/nodejs-app-mss.git'
  }
  

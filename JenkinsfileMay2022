@@ -8,14 +8,14 @@ agent any
 
 //Build
 stage('Build'){
-nodejs(nodeJSInstallationName: 'NodeJS 19.1.0'){
+nodejs(nodeJSInstallationName: 'NodeJS-16.18.1'){
 sh "npm install"
 }
 }
 
 //Execute SOnarQUbe Report
 stage('ExecuteSonarQubeReport'){
-  nodejs(nodeJSInstallationName: 'NodeJS 19.1.0'){
+  nodejs(nodeJSInstallationName: 'NodeJS-16.18.1){
  sh "npm run sonar"
  }
 }

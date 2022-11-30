@@ -8,6 +8,7 @@ node
  
  stage("Build")
  {
+ sh'cd /var/lib/jenkins/workspace/NodeJS_Sample/nodejs-app-mss'
  nodejs(nodeJSInstallationName: 'NodeJS-16.18.1') {
         sh 'npm install'
     }
